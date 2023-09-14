@@ -1,4 +1,5 @@
 const {Router} = require('express')
+const {createPost, getAllPost, deletePost} = require('../controller/postController')
 
 const usePost = Router()
 
@@ -11,7 +12,7 @@ usePost.post('/', (req, res) => {
 })
 
 usePost.delete('/', (req, res) => {
-    res.send('eliminat post')
+    res.send('eliminar post')
 })
 
 module.exports = usePost
