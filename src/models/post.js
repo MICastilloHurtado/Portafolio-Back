@@ -8,7 +8,7 @@ module.exports = (sequelize) => {
             primaryKey: true
         },
         date:{
-            type: DataTypes.DATETIME,
+            type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
         },
         title :{
@@ -16,7 +16,7 @@ module.exports = (sequelize) => {
             allowNull:false
         },
         text :{
-            type:DataTypes.STRING,
+            type:DataTypes.TEXT,
             allowNull:false
         }
     }, {timestamps: true})
