@@ -11,6 +11,10 @@ module.exports = (sequelize) => {
             type :DataTypes.STRING,
             allowNull:false
         },
+        date:{
+            type:DataTypes.DATE,
+            defaultValue: DataTypes.NOW
+        },
         text:{
             type :DataTypes.TEXT,
             allowNull:false
