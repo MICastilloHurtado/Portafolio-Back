@@ -6,8 +6,7 @@ require('dotenv').config()
 const {DATABASE_URL} = process.env
 
 const pool = new pg.Pool({
-    connectionString:DATABASE_URL,
-    ssl:true
+    connectionString:DATABASE_URL
 })
 
 const mainRouter = Router()
