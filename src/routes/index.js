@@ -1,17 +1,10 @@
 const { Router } = require('express')
 const useFeedback = require('./useFeedback')
 const usePost = require('./usePost')
-const pg = require('pg')
-require('dotenv').config()
-const {DATABASE_URL} = process.env
-
-const pool = new pg.Pool({
-    connectionString:DATABASE_URL
-})
 
 const mainRouter = Router()
 
-mainRouter.use('/', (req, res) =>{
+mainRouter.get('/', (req, res) =>{
     res.status(201).send('Pagina funcionando')
 })
 
