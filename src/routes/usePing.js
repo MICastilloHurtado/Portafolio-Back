@@ -7,7 +7,7 @@ const usePing = Router()
 
 const pool = new pg.Pool({
     connectionString:DATABASE_URL,
-    ssl:true
+    // ssl:true
 })
 
 usePing.get('/', async (req, res) => {
